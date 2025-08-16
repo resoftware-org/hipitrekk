@@ -1,0 +1,20 @@
+clean:
+	sudo -u www-data php artisan cache:clear
+	sudo -u www-data php artisan config:clear
+	sudo -u www-data php artisan route:clear
+	sudo -u www-data php artisan view:clear
+	sudo -u www-data php artisan optimize:clear
+	
+install:
+	sudo -u www-data composer install
+
+deploy: clean
+	sudo -u www-data composer dump-autoload
+	sudo -u www-data php artisan config:cache
+	sudo -u www-data php artisan route:cache
+	npm run build
+	sudo chown -R www-data:resoftware . 
+
+down:
+	sudo -u www-data php artisan down --refresh=15
+
