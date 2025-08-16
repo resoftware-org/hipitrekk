@@ -20,3 +20,6 @@ deploy: clean
 down:
 	sudo -u www-data php artisan down --refresh=15
 
+test:
+	./vendor/pestphp/pest/bin/pest
+

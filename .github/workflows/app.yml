@@ -1,4 +1,4 @@
-name: Authentication Tests
+name: Application Tests
 
 on:
     push:
@@ -29,11 +29,6 @@ jobs:
 
     - name: Install Dependencies
       run: composer install --no-progress --prefer-dist
-
-    - name: Remove current tests and symlink to DevDojo Auth
-      run: |
-        rm -rf tests
-        ln -s vendor/devdojo/auth/tests tests
 
     - name: Create sqlite file
       run: touch database/database.sqlite
