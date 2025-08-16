@@ -8,7 +8,7 @@ return [
 			'rules' => 'required'
         ],
 		'occupation' => [
-            'label' => 'What do you do for a living?',
+            'label' => 'Where will you be trailriding?',
             'type' => 'TextInput',
             'rules' => ''
         ]
