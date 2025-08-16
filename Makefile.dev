@@ -14,6 +14,8 @@ deploy: clean
 	sudo -u www-data php artisan route:cache
 	npm run build
 	sudo chown -R www-data:resoftware . 
+	sudo find ./ -type f -not -path "./vendor/*" -exec chmod 664 {} \;
+	sudo find ./ -type d -not -path "./vendor/*" -exec chmod 775 {} \;
 
 down:
 	sudo -u www-data php artisan down --refresh=15
