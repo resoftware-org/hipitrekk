@@ -1,25 +1,25 @@
 clean:
-	sudo -u www-data php artisan cache:clear
-	sudo -u www-data php artisan config:clear
-	sudo -u www-data php artisan route:clear
-	sudo -u www-data php artisan view:clear
-	sudo -u www-data php artisan optimize:clear
-	sudo -u www-data php artisan clear-compiled
-	
+	php artisan cache:clear
+	php artisan config:clear
+	php artisan route:clear
+	php artisan view:clear
+	php artisan optimize:clear
+	php artisan clear-compiled
+
 install:
-	sudo -u www-data composer install
+	composer install
 
 deploy: clean
-	sudo -u www-data composer dump-autoload
-	sudo -u www-data php artisan config:cache
-	sudo -u www-data php artisan route:cache
+	composer dump-autoload
+	php artisan config:cache
+	php artisan route:cache
 	npm run build
-	sudo chown -R www-data:resoftware . 
-	sudo find ./ -type f -not -path "./vendor/*" -exec chmod 664 {} \;
-	sudo find ./ -type d -not -path "./vendor/*" -exec chmod 775 {} \;
+	sudo chown -R $(USER):resoftware .
+	sudo find ./ -type f -not -path "./vendor/*" -not -path "./node_modules/*" -exec chmod 664 {} \;
+	sudo find ./ -type d -not -path "./vendor/*" -not -path "./node_modules/*" -exec chmod 775 {} \;
 
 down:
-	sudo -u www-data php artisan down --refresh=15
+	php artisan down --refresh=15
 
 test:
 	./vendor/pestphp/pest/bin/pest
