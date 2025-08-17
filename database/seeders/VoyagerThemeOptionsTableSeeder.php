@@ -33,7 +33,7 @@ class VoyagerThemeOptionsTableSeeder extends Seeder
                 'id' => 18,
                 'theme_id' => 1,
                 'key' => 'home_headline',
-                'value' => 'Welcome to Wave',
+                'value' => 'Welcome to ' . env('APP_NAME'),
                 'created_at' => '2017-11-25 17:31:45',
                 'updated_at' => '2018-08-28 00:17:41'
             ),

@@ -1,0 +1,1 @@
+<em>{{ get_current_git_commit("main") }}</em>
