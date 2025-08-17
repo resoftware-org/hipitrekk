@@ -3,7 +3,7 @@
     use Livewire\Attributes\Validate;
     use Livewire\Volt\Component;
 
-    use Filament\Forms\Components\{TextArea, TextInput, DatePicker};
+    use Filament\Forms\Components\{Textarea, TextInput, DatePicker};
     use Filament\Forms\Concerns\InteractsWithForms;
     use Filament\Forms\Contracts\HasForms;
     use Filament\Forms\Form;
