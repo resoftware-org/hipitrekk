@@ -48,8 +48,7 @@ new class extends Component implements HasForms {
             <x-elements.back-button class="mx-auto mb-3 max-w-full" text="Back to Journeys" :href="route('journeys')" />
 
             <div class="mb-3 flex items-center justify-between">
-                <x-app.heading title="New Journey" description="Fill out the form below to create a new journey"
-                    :border="false" />
+                <x-app.heading title="New Journey" description="Fill out the form below to create a new journey" :border="false" />
             </div>
 
             <form wire:submit="create" class="space-y-6">

@@ -5,16 +5,14 @@ name('blog.post');
 
 <x-layouts.marketing>
 
-    <article id="post-{{ $post->id }}"
-        class="prose-md prose mx-auto max-w-4xl px-5 pb-20 dark:prose-invert lg:prose-lg lg:px-0">
+    <article id="post-{{ $post->id }}" class="prose-md prose mx-auto max-w-4xl px-5 pb-20 dark:prose-invert lg:prose-lg lg:px-0">
 
         <x-elements.back-button class="mx-auto mt-4 max-w-4xl md:mt-8" text="back to the blog" :href="route('blog')" />
 
         <meta property="name" content="{{ $post->title }}">
         <meta property="author" typeof="Person" content="admin">
         <meta property="dateModified" content="{{ Carbon\Carbon::parse($post->updated_at)->toIso8601String() }}">
-        <meta class="uk-margin-remove-adjacent" property="datePublished"
-            content="{{ Carbon\Carbon::parse($post->created_at)->toIso8601String() }}">
+        <meta class="uk-margin-remove-adjacent" property="datePublished" content="{{ Carbon\Carbon::parse($post->created_at)->toIso8601String() }}">
 
         <div class="mx-auto mt-6 max-w-4xl">
 
@@ -26,8 +24,7 @@ name('blog.post');
         </div>
 
         <div class="relative">
-            <img class="h-auto w-full rounded-lg" src="{{ $post->image() }}" alt="{{ $post->title }}"
-                srcset="{{ $post->image() }}">
+            <img class="h-auto w-full rounded-lg" src="{{ $post->image() }}" alt="{{ $post->title }}" srcset="{{ $post->image() }}">
         </div>
 
         <div class="mx-auto max-w-4xl">

@@ -31,8 +31,7 @@ new class extends Component {
                     <p class="text-blue-blue my-1 font-medium">{{ '@' . $this->user->username }}</p>
 
                     @if (auth()->check() && auth()->user()->isAdmin())
-                        <a href="{{ route('impersonate', $this->user->id) }}"
-                            class="my-2 rounded bg-zinc-200 px-3 py-1 text-xs font-medium text-white text-zinc-600">Impersonate</a>
+                        <a href="{{ route('impersonate', $this->user->id) }}" class="my-2 rounded bg-zinc-200 px-3 py-1 text-xs font-medium text-white text-zinc-600">Impersonate</a>
                     @endif
                     <p class="mx-auto max-w-lg text-center text-base text-zinc-500">{{ $this->user->profile('about') }}</p>
                 </x-card>
@@ -42,8 +41,7 @@ new class extends Component {
                     <p class="mt-2 text-sm text-zinc-600">You can modify this file from your template
                         <strong>resources/themes/anchor</strong> at:
                     </p>
-                    <code
-                        class="mt-2 inline-block rounded-md bg-gray-100 px-2 py-1 font-mono text-sm font-medium text-zinc-600">{{ 'pages/profile/[username].blade.php' }}</code>
+                    <code class="mt-2 inline-block rounded-md bg-gray-100 px-2 py-1 font-mono text-sm font-medium text-zinc-600">{{ 'pages/profile/[username].blade.php' }}</code>
                 </x-card>
             </div>
 

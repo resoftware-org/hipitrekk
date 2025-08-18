@@ -3,6 +3,5 @@
         <h5 class="mb-2 text-xl font-bold text-red-700">Cancel Subscription Plan</h5>
         <p class="text-red-600">Danger Zone! This will cancel your subscription</p>
     </div>
-    <div onclick="document.getElementById('confirmCancel').__x.$data.open = true"
-        class="cursor-pointer rounded-lg bg-red-600 px-4 py-2 text-sm font-medium text-white">Cancel</div>
+    <div onclick="document.getElementById('confirmCancel').__x.$data.open = true" class="cursor-pointer rounded-lg bg-red-600 px-4 py-2 text-sm font-medium text-white">Cancel</div>
 </div>

@@ -20,8 +20,7 @@
 
         @if ($page['image'])
             <div class="relative">
-                <img class="h-auto w-full rounded-lg" src="{{ url($page['image']) }}" alt="{{ url($page['image']) }}"
-                    srcset="{{ url($page['image']) }}">
+                <img class="h-auto w-full rounded-lg" src="{{ url($page['image']) }}" alt="{{ url($page['image']) }}" srcset="{{ url($page['image']) }}">
             </div>
         @endif
 
