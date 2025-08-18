@@ -24,6 +24,12 @@
   },
   "prettier": {
     "tabWidth": 4,
+    "bracketSpacing": true,
+    "endOfLine":"lf",
+    "htmlWhitespaceSensitivity": "css",
+    "printWidth": 300,
+    "proseWrap": "preserve",
+    "quoteProps": "as-needed",
     "plugins": [
       "@shufo/prettier-plugin-blade",
       "prettier-plugin-tailwindcss"

@@ -11,8 +11,7 @@ name('blog.category');
 
     <x-container>
         <div class="relative pt-6">
-            <x-marketing.elements.heading title="{{ $category->name }} Articles"
-                description="Our latest {{ $category->name }} posts below." align="left" />
+            <x-marketing.elements.heading title="{{ $category->name }} Articles" description="Our latest {{ $category->name }} posts below." align="left" />
 
             @include('theme::partials.blog.categories')
 

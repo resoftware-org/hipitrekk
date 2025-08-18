@@ -24,8 +24,7 @@
     <meta property="og:title" content="{{ $seo->title }}">
     <meta property="og:url" content="{{ Request::url() }}">
     <meta property="og:image" content="{{ $seo->image }}">
-    <meta property="og:type"
-        content="@if (isset($seo->type)) {{ $seo->type }}@else{{ 'article' }} @endif">
+    <meta property="og:type" content="@if (isset($seo->type)) {{ $seo->type }}@else{{ 'article' }} @endif">
     <meta property="og:description" content="{{ $seo->description }}">
     <meta property="og:site_name" content="{{ setting('site.title') }}">
 

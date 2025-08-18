@@ -17,19 +17,14 @@ $layout = auth()->guest() ? 'layouts.marketing' : 'layouts.app';
 
                 <meta property="name" content="{{ $changelog->title }}">
                 <meta property="author" typeof="Person" content="admin">
-                <meta property="dateModified"
-                    content="{{ Carbon\Carbon::parse($changelog->updated_at)->toIso8601String() }}">
-                <meta class="uk-margin-remove-adjacent" property="datePublished"
-                    content="{{ Carbon\Carbon::parse($changelog->created_at)->toIso8601String() }}">
+                <meta property="dateModified" content="{{ Carbon\Carbon::parse($changelog->updated_at)->toIso8601String() }}">
+                <meta class="uk-margin-remove-adjacent" property="datePublished" content="{{ Carbon\Carbon::parse($changelog->created_at)->toIso8601String() }}">
 
                 <x-app.heading :title="$changelog->title" :description="$changelog->description" />
 
-                <p class="mt-5 text-xs font-medium tracking-wider text-zinc-800">Posted on <time
-                        datetime="{{ Carbon\Carbon::parse($changelog->created_at)->toIso8601String() }}"
-                        class="ml-1">{{ Carbon\Carbon::parse($changelog->created_at)->toFormattedDateString() }}</time>
+                <p class="mt-5 text-xs font-medium tracking-wider text-zinc-800">Posted on <time datetime="{{ Carbon\Carbon::parse($changelog->created_at)->toIso8601String() }}" class="ml-1">{{ Carbon\Carbon::parse($changelog->created_at)->toFormattedDateString() }}</time>
                 </p>
-                <div
-                    class="prose prose-base mx-auto mt-5 max-w-full text-zinc-600 dark:prose-invert dark:text-zinc-300">
+                <div class="prose prose-base mx-auto mt-5 max-w-full text-zinc-600 dark:prose-invert dark:text-zinc-300">
                     {!! $changelog->body !!}
                 </div>
 

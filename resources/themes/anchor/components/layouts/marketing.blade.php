@@ -5,9 +5,7 @@
     @include('theme::partials.head', ['seo' => $seo ?? null])
 </head>
 
-<body x-data
-    class="@if ($bodyClass ?? false) {{ $bodyClass }} @endif flex min-h-screen flex-col overflow-x-hidden"
-    x-cloak>
+<body x-data class="@if ($bodyClass ?? false) {{ $bodyClass }} @endif flex min-h-screen flex-col overflow-x-hidden" x-cloak>
 
     <x-marketing.elements.header />
 

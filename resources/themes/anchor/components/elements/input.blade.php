@@ -8,8 +8,7 @@
     'valid' => true,
 ])
 
-<x-filament::input.wrapper :valid="$valid" :prefix-icon="$prefixIcon" :prefix-icon-color="$prefixIconColor" :suffixIcon="$suffixIcon" :affix-icon-color="$affixIconColor"
-    label="cool beans">
+<x-filament::input.wrapper :valid="$valid" :prefix-icon="$prefixIcon" :prefix-icon-color="$prefixIconColor" :suffixIcon="$suffixIcon" :affix-icon-color="$affixIconColor" label="cool beans">
     @if ($prefixText)
         <x-slot name="prefix">{{ $prefixText }}</x-slot>
     @endif

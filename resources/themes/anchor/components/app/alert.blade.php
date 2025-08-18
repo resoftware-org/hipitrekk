@@ -22,8 +22,7 @@
 <div x-show="alert_{{ $id }}" x-data="{ alert_{{ $id }}: $persist(true) }"
     {{ $attributes->class([
         'relative pl-5 pr-10 py-4 w-full rounded-md border',
-        'bg-gray-100 dark:bg-zinc-700 dark:border-zinc-600 text-gray-900 dark:text-gray-300 border-gray-200 dark:border-zinc-800' =>
-            $type == 'gray',
+        'bg-gray-100 dark:bg-zinc-700 dark:border-zinc-600 text-gray-900 dark:text-gray-300 border-gray-200 dark:border-zinc-800' => $type == 'gray',
         'bg-blue-50 text-blue-600 border-blue-200' => $type == 'info',
         'bg-green-100 text-green-600 border-green-200' => $type == 'success',
         'bg-yellow-50 text-yellow-600 border-yellow-200' => $type == 'warning',
@@ -31,8 +30,7 @@
     ]) }}
     x-collapse x-cloak>
     @if ($dismissable)
-        <button @click="alert_{{ $id }}=false"
-            class="absolute right-0 top-0 z-50 mr-3 mt-3.5 cursor-pointer rounded-full p-1.5 text-zinc-500 opacity-70 hover:bg-zinc-200 hover:opacity-100 dark:text-zinc-400 hover:dark:bg-zinc-700 hover:dark:text-zinc-300"><x-phosphor-x-bold
+        <button @click="alert_{{ $id }}=false" class="absolute right-0 top-0 z-50 mr-3 mt-3.5 cursor-pointer rounded-full p-1.5 text-zinc-500 opacity-70 hover:bg-zinc-200 hover:opacity-100 dark:text-zinc-400 hover:dark:bg-zinc-700 hover:dark:text-zinc-300"><x-phosphor-x-bold
                 class="h-3.5 w-3.5" /></button>
     @endif
     @if ($title ?? false)

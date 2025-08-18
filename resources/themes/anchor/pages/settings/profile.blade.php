@@ -157,21 +157,15 @@ new class extends Component implements HasForms {
                 <form wire:submit="save" class="w-full">
                     <div class="relative mt-5 flex flex-col lg:px-10">
                         <div class="group relative h-32 w-32 flex-shrink-0 cursor-pointer">
-                            <img id="preview" src="{{ auth()->user()->avatar() . '?' . time() }}"
-                                class="h-32 w-32 rounded-full">
+                            <img id="preview" src="{{ auth()->user()->avatar() . '?' . time() }}" class="h-32 w-32 rounded-full">
 
                             <div class="absolute inset-0 h-full w-full">
-                                <input type="file" id="upload"
-                                    class="group absolute inset-0 z-20 h-full w-full cursor-pointer opacity-0">
-                                <button
-                                    class="absolute bottom-0 left-1/2 z-10 -ml-5 mb-2 flex h-10 w-10 items-center justify-center rounded-full bg-black bg-opacity-75 opacity-75 group-hover:opacity-100">
-                                    <svg class="h-6 w-6 text-zinc-400" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z">
+                                <input type="file" id="upload" class="group absolute inset-0 z-20 h-full w-full cursor-pointer opacity-0">
+                                <button class="absolute bottom-0 left-1/2 z-10 -ml-5 mb-2 flex h-10 w-10 items-center justify-center rounded-full bg-black bg-opacity-75 opacity-75 group-hover:opacity-100">
+                                    <svg class="h-6 w-6 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z">
                                         </path>
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                     </svg>
                                 </button>
                             </div>
@@ -197,15 +191,11 @@ new class extends Component implements HasForms {
                                     Position and resize your photo
                                 </h3>
                                 <div class="mt-2">
-                                    <div id="upload-crop-container"
-                                        class="relative mt-5 flex h-56 items-center justify-center">
+                                    <div id="upload-crop-container" class="relative mt-5 flex h-56 items-center justify-center">
                                         <div id="uploadLoading" class="flex h-full w-full items-center justify-center">
-                                            <svg class="-ml-1 mr-3 h-5 w-5 animate-spin text-zinc-400"
-                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                                <circle class="opacity-25" cx="12" cy="12" r="10"
-                                                    stroke="currentColor" stroke-width="4"></circle>
-                                                <path class="opacity-75" fill="currentColor"
-                                                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                                            <svg class="-ml-1 mr-3 h-5 w-5 animate-spin text-zinc-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
                                                 </path>
                                             </svg>
                                         </div>
@@ -216,12 +206,10 @@ new class extends Component implements HasForms {
                         </div>
                         <div class="mt-5 sm:mt-6">
                             <span class="flex w-full rounded-md shadow-sm">
-                                <button
-                                    @click="window.dispatchEvent(new CustomEvent('close-modal', { detail: { id: 'profile-avatar-crop' }}));"
+                                <button @click="window.dispatchEvent(new CustomEvent('close-modal', { detail: { id: 'profile-avatar-crop' }}));"
                                     class="focus:shadow-outline-blue mr-2 inline-flex w-full justify-center rounded-md border border-transparent border-zinc-300 bg-white px-4 py-2 text-base font-medium leading-6 text-zinc-700 shadow-sm transition duration-150 ease-in-out hover:text-zinc-500 focus:border-blue-300 focus:outline-none active:text-zinc-800 sm:text-sm sm:leading-5"
                                     type="button">Cancel</button>
-                                <button
-                                    @click="window.dispatchEvent(new CustomEvent('close-modal', { detail: { id: 'profile-avatar-crop' }})); applyImageCrop()"
+                                <button @click="window.dispatchEvent(new CustomEvent('close-modal', { detail: { id: 'profile-avatar-crop' }})); applyImageCrop()"
                                     class="focus:shadow-outline-wave ml-2 inline-flex w-full justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium leading-6 text-white shadow-sm transition duration-150 ease-in-out hover:bg-blue-500 focus:border-blue-700 focus:outline-none sm:text-sm sm:leading-5"
                                     id="apply-crop" type="button">Apply</button>
                             </span>
@@ -254,8 +242,7 @@ new class extends Component implements HasForms {
             }
         </style>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.min.js"></script>
-        <link rel="stylesheet" type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.2/croppie.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.2/croppie.min.css">
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.2/croppie.min.js"></script>
     </x-slot>
 

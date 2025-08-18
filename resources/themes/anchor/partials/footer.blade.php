@@ -2,8 +2,7 @@
 <footer class="pt-10">
     <x-container>
         <div class="flex flex-wrap items-start justify-between pb-20">
-            <a href="#_"
-                class="mt-1 flex w-auto items-center text-lg font-bold brightness-0 transition-all duration-300 ease-out hover:brightness-100 md:w-1/6">
+            <a href="#_" class="mt-1 flex w-auto items-center text-lg font-bold brightness-0 transition-all duration-300 ease-out hover:brightness-100 md:w-1/6">
                 <x-logo class="h-8 w-auto flex-shrink-0"></x-logo>
             </a>
             <div class="mt-20 grid w-full grid-cols-2 gap-y-16 pt-2 sm:grid-cols-4 md:mt-0 md:w-5/6 md:pr-6 lg:gap-x-8">
@@ -12,29 +11,25 @@
                     <ul class="mt-6 space-y-4 text-sm">
                         <li>
                             <a href="#_" class="group relative inline-block text-black">
-                                <span
-                                    class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
+                                <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
                                 <span>Features</span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="group relative inline-block text-black">
-                                <span
-                                    class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
+                                <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
                                 <span>Integrations</span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="group relative inline-block text-black">
-                                <span
-                                    class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
+                                <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
                                 <span>Documentation</span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="group relative inline-block text-black">
-                                <span
-                                    class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
+                                <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
                                 <span>Pricing</span>
                             </a>
                         </li>
@@ -45,29 +40,25 @@
                     <ul class="mt-6 space-y-4 text-sm">
                         <li>
                             <a href="#_" class="group relative inline-block text-black">
-                                <span
-                                    class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
+                                <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
                                 <span>Our Story</span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="group relative inline-block text-black">
-                                <span
-                                    class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
+                                <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
                                 <span>Company</span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="group relative inline-block text-black">
-                                <span
-                                    class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
+                                <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
                                 <span>Our Team</span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="group relative inline-block text-black">
-                                <span
-                                    class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
+                                <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
                                 <span>Work With Us</span>
                             </a>
                         </li>
@@ -78,36 +69,31 @@
                     <ul class="mt-6 space-y-4 text-sm">
                         <li>
                             <a href="#_" class="group relative inline-block text-black">
-                                <span
-                                    class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
+                                <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
                                 <span>Help Center</span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="group relative inline-block text-black">
-                                <span
-                                    class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
+                                <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
                                 <span>Developer API</span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="group relative inline-block text-black">
-                                <span
-                                    class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
+                                <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
                                 <span>Our Blog</span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="group relative inline-block text-black">
-                                <span
-                                    class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
+                                <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
                                 <span>Status</span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="group relative inline-block text-black">
-                                <span
-                                    class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
+                                <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
                                 <span>Sitemap</span>
                             </a>
                         </li>
@@ -118,29 +104,25 @@
                     <ul class="mt-6 space-y-4 text-sm">
                         <li>
                             <a href="#_" class="group relative inline-block text-black">
-                                <span
-                                    class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
+                                <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
                                 <span>Advertising</span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="group relative inline-block text-black">
-                                <span
-                                    class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
+                                <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
                                 <span>Press</span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="group relative inline-block text-black">
-                                <span
-                                    class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
+                                <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
                                 <span>Partners</span>
                             </a>
                         </li>
                         <li>
                             <a href="#_" class="group relative inline-block text-black">
-                                <span
-                                    class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
+                                <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-1 group-hover:opacity-100"></span>
                                 <span>Email</span>
                             </a>
                         </li>
@@ -155,22 +137,19 @@
                     {{ setting('site.title', 'Laravel Wave') }}, Inc. All rights reserved.</li>
                 <li class="lg:ml-6">
                     <a href="#_" class="group relative inline-block text-black">
-                        <span
-                            class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-0 group-hover:opacity-100"></span>
+                        <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-0 group-hover:opacity-100"></span>
                         <span>Privacy Policy</span>
                     </a>
                 </li>
                 <li class="ml-auto mr-auto text-center lg:ml-6 lg:mr-0">
                     <a href="#_" class="group relative inline-block text-black">
-                        <span
-                            class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-0 group-hover:opacity-100"></span>
+                        <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-0 group-hover:opacity-100"></span>
                         <span>Disclaimers</span>
                     </a>
                 </li>
                 <li class="lg:ml-6">
                     <a href="#_" class="group relative inline-block text-black">
-                        <span
-                            class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-0 group-hover:opacity-100"></span>
+                        <span class="absolute bottom-0 w-full -translate-y-1 transform border-b border-black opacity-0 transition duration-150 ease-out group-hover:translate-y-0 group-hover:opacity-100"></span>
                         <span>Terms and Conditions</span>
                     </a>
                 </li>

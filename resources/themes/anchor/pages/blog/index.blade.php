@@ -12,8 +12,7 @@ $categories = \Wave\Category::all();
 ]">
     <x-container>
         <div class="relative pt-6">
-            <x-marketing.elements.heading title="From The Blog"
-                description="Check out some of our latest blog posts below." align="left" />
+            <x-marketing.elements.heading title="From The Blog" description="Check out some of our latest blog posts below." align="left" />
 
             @include('theme::partials.blog.categories')
 
