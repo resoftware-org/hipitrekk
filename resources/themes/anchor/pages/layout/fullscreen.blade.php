@@ -1,9 +1,9 @@
 <x-layouts.app>
-	<div class="flex flex-col flex-1 items-stretch p-5 h-100">
-		<div class="flex flex-col flex-1 items-stretch mx-auto w-full h-100">
-			<div class="relative flex-1 w-full h-100">
-				<x-placeholder class="h-100" />
-			</div>
-		</div>
-	</div>
+    <div class="h-100 flex flex-1 flex-col items-stretch p-5">
+        <div class="h-100 mx-auto flex w-full flex-1 flex-col items-stretch">
+            <div class="h-100 relative w-full flex-1">
+                <x-placeholder class="h-100" />
+            </div>
+        </div>
+    </div>
 </x-layouts.app>

@@ -1,1 +1,1 @@
-<p class="mx-auto mt-4 max-w-2xl text-base font-medium text-center text-zinc-500 text-balance">{{ $slot }}</p>
+<p class="mx-auto mt-4 max-w-2xl text-balance text-center text-base font-medium text-zinc-500">{{ $slot }}</p>

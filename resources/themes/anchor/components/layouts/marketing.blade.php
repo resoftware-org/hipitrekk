@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
+
 <head>
-    @include('theme::partials.head', ['seo' => ($seo ?? null) ])
+    @include('theme::partials.head', ['seo' => $seo ?? null])
 </head>
-<body x-data class="flex flex-col min-h-screen overflow-x-hidden @if($bodyClass ?? false){{ $bodyClass }}@endif" x-cloak>
+
+<body x-data
+    class="@if ($bodyClass ?? false) {{ $bodyClass }} @endif flex min-h-screen flex-col overflow-x-hidden"
+    x-cloak>
 
     <x-marketing.elements.header />
 
@@ -17,4 +21,5 @@
     {{ $javascript ?? '' }}
 
 </body>
+
 </html>
