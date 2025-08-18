@@ -1,81 +1,61 @@
 <?php
-    use Filament\Forms\Components\TextInput;
-    use Livewire\Volt\Component;
-    use function Laravel\Folio\{middleware, name};
-    use Filament\Forms\Concerns\InteractsWithForms;
-    use Filament\Forms\Contracts\HasForms;
-    use Filament\Forms\Form;
-    use Filament\Notifications\Notification;
-    
-    middleware('auth');
-    name('settings.security');
+use Filament\Forms\Components\TextInput;
+use Livewire\Volt\Component;
+use function Laravel\Folio\{middleware, name};
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
+use Filament\Forms\Form;
+use Filament\Notifications\Notification;
 
-	new class extends Component implements HasForms
-	{
-        use InteractsWithForms;
+middleware('auth');
+name('settings.security');
 
-        public ?array $data = [];
+new class extends Component implements HasForms {
+    use InteractsWithForms;
 
-        public function mount(): void
-        {
-            $this->form->fill();
-        }
+    public ?array $data = [];
 
-        public function form(Form $form): Form
-        {
-            return $form
-                ->schema([
-                    TextInput::make('current_password')
-                        ->label('Current Password')
-                        ->required()
-                        ->currentPassword()
-                        ->password()
-                        ->revealable(),
-                    TextInput::make('password')
-                        ->label('New Password')
-                        ->required()
-                        ->minLength(4)
-                        ->password()
-                        ->revealable(),
-                    TextInput::make('password_confirmation')
-                        ->label('Confirm New Password')
-                        ->required()
-                        ->password()
-                        ->revealable()
-                        ->same('password')
-                    // ...
-                ])
-                ->statePath('data');
-        }
-        
-        public function save(): void
-        {
-            $state = $this->form->getState();
-            $this->validate();
+    public function mount(): void
+    {
+        $this->form->fill();
+    }
 
-            auth()->user()->forceFill([
-                'password' => bcrypt($state['password'])
-            ])->save();
+    public function form(Form $form): Form
+    {
+        return $form
+            ->schema([
+                TextInput::make('current_password')->label('Current Password')->required()->currentPassword()->password()->revealable(),
+                TextInput::make('password')->label('New Password')->required()->minLength(4)->password()->revealable(),
+                TextInput::make('password_confirmation')->label('Confirm New Password')->required()->password()->revealable()->same('password'),
+                // ...
+            ])
+            ->statePath('data');
+    }
 
-            $this->form->fill();
+    public function save(): void
+    {
+        $state = $this->form->getState();
+        $this->validate();
 
-            Notification::make()
-                ->title('Successfully changed password')
-                ->success()
-                ->send();
-        }
+        auth()
+            ->user()
+            ->forceFill([
+                'password' => bcrypt($state['password']),
+            ])
+            ->save();
 
-	}
+        $this->form->fill();
+
+        Notification::make()->title('Successfully changed password')->success()->send();
+    }
+};
 
 ?>
 
 <x-layouts.app>
-    @volt('settings.security') 
+    @volt('settings.security')
         <div class="relative">
-            <x-app.settings-layout
-                title="Security"
-                description="Update and change your current account password."
-            >
+            <x-app.settings-layout title="Security" description="Update and change your current account password.">
                 <form wire:submit="save" class="w-full max-w-lg">
                     {{ $this->form }}
                     <div class="w-full pt-6 text-right">

@@ -1,19 +1,15 @@
 <x-layouts.marketing>
 
-    <x-elements.back-button
-        class="max-w-3xl mx-auto mt-4 md:mt-8"
-        text="Return Back Home"
-        :href="route('home')"
-    />
-    
-    <article id="post-{{ $page['id'] }}" class="max-w-3xl px-5 mx-auto mb-32 prose prose-lg lg:prose-xl lg:px-0">
+    <x-elements.back-button class="mx-auto mt-4 max-w-3xl md:mt-8" text="Return Back Home" :href="route('home')" />
+
+    <article id="post-{{ $page['id'] }}" class="prose prose-lg mx-auto mb-32 max-w-3xl px-5 lg:prose-xl lg:px-0">
 
         <meta property="name" content="{{ $page['title'] }}">
         <meta property="author" typeof="Person" content="admin">
         <meta property="dateModified" content="{{ Carbon\Carbon::parse($page['updated_at'])->toIso8601String() }}">
         <meta property="datePublished" content="{{ Carbon\Carbon::parse($page['created_at'])->toIso8601String() }}">
 
-        <div class="max-w-4xl mx-auto mt-6">
+        <div class="mx-auto mt-6 max-w-4xl">
 
             <h1 class="flex flex-col leading-none">
                 <span>{{ $page['title'] }}</span>
@@ -22,13 +18,14 @@
 
         </div>
 
-        @if($page['image'])
+        @if ($page['image'])
             <div class="relative">
-                <img class="w-full h-auto rounded-lg" src="{{ url($page['image']) }}" alt="{{ url($page['image']) }}" srcset="{{ url($page['image']) }}">
+                <img class="h-auto w-full rounded-lg" src="{{ url($page['image']) }}" alt="{{ url($page['image']) }}"
+                    srcset="{{ url($page['image']) }}">
             </div>
         @endif
 
-        <div class="max-w-4xl mx-auto">
+        <div class="mx-auto max-w-4xl">
             {!! $page['body'] !!}
         </div>
 
