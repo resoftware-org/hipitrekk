@@ -62,7 +62,7 @@ window.addEventListener('scroll', function() {
                 }"
                     id="menu" class="pointer-events-auto ml-0 flex h-full w-full flex-1 items-stretch justify-start gap-x-8 border-t border-gray-100 md:w-auto md:flex-row md:items-center md:justify-center md:border-t-0">
                     <li x-data="{ open: false }" @mouseenter="showOverlay=true" @mouseleave="showOverlay=false" class="group z-30 flex h-auto flex-col items-start border-b border-gray-100 md:h-full md:flex-row md:items-center md:border-b-0">
-                        <a href="#_" x-on:click="open=!open" class="flex h-16 w-full items-center gap-1 px-7 text-sm font-semibold text-gray-700 transition duration-300 hover:bg-gray-100 hover:text-gray-900 md:h-full md:w-auto md:px-0 md:hover:bg-transparent">
+                        <a href="#_" x-on:click="open=!open" class="flex h-16 w-full items-center gap-1 px-7 text-sm font-semibold text-white transition duration-300 hover:bg-gray-100 hover:text-sunflower md:h-full md:w-auto md:px-0 md:hover:bg-transparent">
                             <span class="">Platform</span>
                             <svg :class="{ 'group-hover:-rotate-180': !mobileMenuOpen, '-rotate-180': mobileMenuOpen && open }" class="h-5 w-5 transition-all duration-300 ease-out" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" class=""></path>
@@ -129,7 +129,7 @@ window.addEventListener('scroll', function() {
                         </div>
                     </li>
                     <li x-data="{ open: false }" @mouseenter="showOverlay=true" @mouseleave="showOverlay=false" class="group z-30 flex h-auto flex-col items-start border-b border-gray-100 md:h-full md:flex-row md:items-center md:border-b-0">
-                        <a href="#_" x-on:click="open=!open" class="flex h-16 w-full items-center gap-1 px-7 text-sm font-semibold text-gray-700 transition duration-300 hover:bg-gray-100 hover:text-gray-900 md:h-full md:w-auto md:px-0 md:hover:bg-transparent">
+                        <a href="#_" x-on:click="open=!open" class="flex h-16 w-full items-center gap-1 px-7 text-sm font-semibold text-white transition duration-300 hover:bg-gray-100 hover:text-sunflower md:h-full md:w-auto md:px-0 md:hover:bg-transparent">
                             <span class="">Resources</span>
                             <svg :class="{ 'group-hover:-rotate-180': !mobileMenuOpen, '-rotate-180': mobileMenuOpen && open }" class="h-5 w-5 transition-all duration-300 ease-out" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" class=""></path>
@@ -186,12 +186,12 @@ window.addEventListener('scroll', function() {
                         </div>
                     </li>
                     <li class="h-16 flex-shrink-0 border-b border-gray-100 md:h-full md:border-b-0">
-                        <a href="{{ route('pricing') }}" class="flex h-full items-center px-7 text-sm font-semibold text-gray-700 transition duration-300 hover:bg-gray-100 hover:text-gray-900 md:px-0 md:hover:bg-transparent">
+                        <a href="{{ route('pricing') }}" class="flex h-full items-center px-7 text-sm font-semibold text-white transition duration-300 hover:bg-gray-100 hover:text-sunflower md:px-0 md:hover:bg-transparent">
                             Pricing
                         </a>
                     </li>
                     <li class="h-16 flex-shrink-0 border-b border-gray-100 md:h-full md:border-b-0">
-                        <a href="{{ route('blog') }}" class="flex h-full items-center px-7 text-sm font-semibold text-gray-700 transition duration-300 hover:bg-gray-100 hover:text-gray-900 md:px-0 md:hover:bg-transparent">Blog</a>
+                        <a href="{{ route('blog') }}" class="flex h-full items-center px-7 text-sm font-semibold text-white transition duration-300 hover:bg-gray-100 hover:text-sunflower md:px-0 md:hover:bg-transparent">Blog</a>
                     </li>
 
                     @guest
