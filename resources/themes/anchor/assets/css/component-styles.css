@@ -1,5 +1,5 @@
 .fi-btn {
-    @apply rounded-md text-sm;
+    @apply rounded-lg text-sm;
 }
 
 .fi-btn.fi-size-lg {
@@ -14,8 +14,12 @@
     @apply px-3 py-1.5;
 }
 
+.fi-btn.fi-color-primary {
+    @apply inline-flex items-center justify-center gap-3 rounded-lg bg-olive text-sm font-medium duration-200 hover:bg-sunflower focus:ring-1 focus:ring-zinc-200 focus:ring-offset-1;
+}
+
 .fi-btn.fi-color-secondary {
-    @apply inline-flex items-center justify-center gap-3 bg-gray-100 font-medium text-zinc-800 duration-200 hover:bg-gray-200 focus:ring-2 focus:ring-zinc-200 focus:ring-offset-2;
+    @apply inline-flex items-center justify-center gap-3 rounded-lg bg-earth text-sm font-medium duration-200 hover:bg-sunflower focus:ring-1 focus:ring-zinc-200 focus:ring-offset-1;
 }
 
 label {
@@ -23,7 +27,7 @@ label {
 }
 
 .fi-btn-color-secondary svg {
-    @apply text-neutral-700;
+    @apply text-white;
 }
 
 .fi-modal-close-overlay {

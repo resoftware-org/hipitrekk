@@ -9,7 +9,7 @@
 
     <x-marketing.elements.header />
 
-    <main class="flex-grow overflow-x-hidden">
+    <main class="relative top-[-97px] flex-grow overflow-x-hidden">
         {{ $slot }}
     </main>
 

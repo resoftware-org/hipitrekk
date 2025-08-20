@@ -1,24 +1,21 @@
-<section class="relative top-0 -mt-24 flex min-h-screen w-full flex-col items-center justify-center bg-white lg:min-h-screen">
+<section class="relative">
 
-    <div class="mx-auto flex w-full max-w-2xl flex-1 flex-col items-center justify-between gap-6 px-8 pt-32 text-left md:px-12 lg:max-w-7xl lg:flex-row lg:pb-16 lg:pt-32 xl:px-20">
-        <div class="w-full lg:w-1/2">
-            <h1 class="text-balance text-left text-6xl font-bold tracking-tighter text-zinc-900 sm:text-center sm:text-7xl md:text-8xl lg:text-left">
-                <span class="block origin-left text-nowrap lg:scale-90">Ship in Days</span> <span class="bg-gradient-to-b from-neutral-900 to-neutral-500 bg-clip-text pr-4 text-neutral-600 text-transparent">Not
-                    Weeks</span>
-            </h1>
-            <p class="mx-auto mt-5 text-left text-2xl font-normal text-zinc-500 sm:max-w-md sm:text-center lg:ml-0 lg:max-w-md lg:text-left">
-                Customize this to highlight your product’s unique selling points<span class="hidden sm:inline"> and
-                    features</span>.
-            </p>
-            <div class="mx-auto mt-8 flex flex-col items-center justify-center gap-3 md:ml-0 md:flex-row md:gap-2 lg:justify-start">
-                <x-button size="lg" class="w-full lg:w-auto">Primary Button</x-button>
-                <x-button size="lg" color="secondary" class="w-full lg:w-auto">Secondary Button</x-button>
+    <figure class="-z-1 absolute left-0 top-0 h-screen w-full overflow-hidden">
+        <div class="absolute inset-0 z-[1] bg-black/50"></div> <!-- Overlay -->
+        <img alt="ALT-TEXT" class="animate-zoom h-full w-full transform object-cover" src="{{ Vite::asset('resources/themes/anchor/assets/images/home-hero.jpg') }}">
+    </figure>
+
+    <div class="relative z-[2] h-screen w-full p-16">
+        <div class="mx-auto flex h-full max-w-3xl flex-col items-center justify-center gap-6 text-center">
+            <h1 class="text-5xl leading-tight text-white">Descubre momentos inolvidables junto a tu caballo</h1>
+            <p class="text-lg text-white">Explora caminos escondidos con nuestras rutas de trekking a caballo</p>
+            <div class="mx-auto flex flex-col items-center justify-center gap-3 md:flex-row md:gap-2">
+                <x-button size="lg" color="primary" class="w-full lg:w-auto">Más información</x-button>
+                <x-button size="lg" color="secondary" class="w-full lg:w-auto">Planifica tu ruta</x-button>
             </div>
         </div>
-        <div class="mt-12 flex w-full items-center justify-center lg:mt-0 lg:w-1/2">
-            <img alt="Wave Character" class="relative w-full lg:scale-125 xl:translate-x-6" src="/wave/img/character.png" style="max-width:450px;">
-        </div>
     </div>
+
     <div class="flex w-full flex-shrink-0 items-center border-t border-zinc-200 bg-white lg:h-[150px]">
         <div class="mx-auto grid h-auto max-w-7xl grid-cols-1 space-y-5 divide-y divide-zinc-200 px-8 py-10 md:px-12 lg:grid-cols-3 lg:space-y-0 lg:divide-x lg:divide-y-0 lg:divide-zinc-200 lg:px-20 lg:py-0">
             <div class="">
@@ -45,4 +42,5 @@
             </div>
         </div>
     </div>
+
 </section>
